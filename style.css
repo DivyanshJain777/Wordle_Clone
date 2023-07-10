@@ -162,36 +162,4 @@ background-color: hsl(
       transform: translateY(0);
     }
   }
-
-  .key{
-    font-size: inherit;
-    background-color: hsl(
-      var(--hue, 200),
-      var(--saturation, 1%),
-      calc(var(--lightness-offset, 0%) + var(--lightness, 51%))
-    );
-}
-
-.key:hover, .key:focus {
-    --lightness-offset: 10%;
-  }
-  
-.key.wrong {
-background-color: hsl(
-    var(--hue, 200),
-    var(--saturation, 1%),
-    calc(var(--lightness-offset, 0%) + var(--lightness, 23%))
-);
-}
-  
-.key.wrong-location {
---hue: 49;
---saturation: 51%;
---lightness: 47%;
-}
-  
-.key.correct {
---hue: 115;
---saturation: 29%;
---lightness: 43%;
 }
